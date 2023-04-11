@@ -1,0 +1,6 @@
+POST http:/localhost:9001/komi-inbound/json/service HTTP/1.1
+Content-Type: application/json
+
+{"BusMsg":{"AppHdr":{"Fr":{"FIId":{"FinInstnId":{"Othr":{"Id":"FASTIDJA"}}}},"To":{"FIId":{"FinInstnId":{"Othr":{"Id":"SIHBIDJI"}}}},"BizMsgIdr":"20220802FASTIDJA010R0200001711","MsgDefIdr":"pacs.002.001.10","BizSvc":"STTL","CreDt":"2022-08-02T04:52:47Z"},"Document":{"FIToFIPmtStsRpt":{"GrpHdr":{"MsgId":"20220802FASTIDJA01000001687","CreDtTm":"2022-08-02T11:52:47.187"},"OrgnlGrpInfAndSts":[{"OrgnlMsgId":"20220802SIHBIDJ101042764001","OrgnlMsgNmId":"pacs.008.001.08"}],"TxInfAndSts":[{"OrgnlEndToEndId":"20220802SIHBIDJ1010O0242764001","OrgnlTxId":"20220802SIHBIDJ101042764001","TxSts":"ACSC","StsRsnInf":[{"Rsn":{"Prtry":"U000"}}],"ClrSysRef":"001","OrgnlTxRef":{"Dbtr":{"Pty":{"Nm":"SULISTIYOWATI"}},"DbtrAcct":{"Id":{"Othr":{"Id":"2012102710197"}},"Tp":{"Prtry":"SVGS"}},"DbtrAgt":{"FinInstnId":{"Othr":{"Id":"SIHBIDJ1"}}},"CdtrAgt":{"FinInstnId":{"Othr":{"Id":"CENAIDJA"}}},"Cdtr":{"Pty":{"Nm":"ANDRIAN S"}},"CdtrAcct":{"Id":{"Othr":{"Id":"112211333"}}}},"SplmtryData":[{"Envlp":{"Dtl":{"DbtrAgtAcct":{"Id":{"Othr":{"Id":"01234567"}}},"CdtrAgtAcct":{"Id":{"Othr":{"Id":"567890"}}}}}}]}]}}}}
+
+###

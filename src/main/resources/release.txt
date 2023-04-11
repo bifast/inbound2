@@ -1,0 +1,49 @@
+3-Maret-2022: Rel-1.1
+Bugfix : 
+- fix error for empty RmtInf
+Change : 
+- accountEnquiry response, exclude Creditor's Type, Creditor's National Identity, Creditor's Resident Status, Creditor's Town Name
+
+08-Mar-2022: Rel-1.2
+Upgrade
+- Camel 3.14.1
+
+28-Mar-2022
+Bugfix :
+- response CreDtTm as String
+
+31-Mar-2022
+Bugfix :
+- CreDtTm pada pacs.028 (payment status) 
+
+8-Apr-2022
+BugFix :
+- Upgrade Spring Boot 2.5.12 
+- SettlementSAF, jika response U106 maka status CT.settlement = NOTFOUND
+- PaymentStatusSAF, no bizmsgidr ubah dari RFI jadi OFI
+- Flat002.CrdtAgnFinInstId diganti CT.orgnlBank/recptBank
+
+2-Juli-2022 (v1.5)
+Functional:
+- Atas Credit yang timeout jangan kirim Reversal-CT
+Coding:
+- Upgrade Springboot 2.7.0, Camel 3.17.0
+- Add msg receive admi.002
+- On-off CTSAFRoute ubah jadi periodik 
+Bugfix:
+- Error unt build category purpose untuk reversal ct
+- Antisipasi response AE dari corebank "U999 - Program Call Error"
+- IgnoredJsonProperty kasus pacs002 dengan RltdEndToEndId
+
+3-Agustus-2022 (v.1.5.1)
+Bugfix:
+- Outbound settlement tidak update di sttl_status table CT
+- Tambah retry unt portal notification
+- admi.002 flatService ada error null
+
+5-Agustus-2022 (v.1.5.2-SNAPSHOT)
+Bugfix:
+- ReversalCT salah kasih response
+- AE response corebank 504 error response
+
+ 
